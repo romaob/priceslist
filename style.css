@@ -1,0 +1,50 @@
+body{
+    margin: 0;
+    background-color: rgb(33, 35, 37);
+    color: rgb(255, 196, 0);
+    text-align: center;
+    font-family: monospace;
+}
+
+h1, h2{
+    font-weight: normal;
+}
+.divider{
+    height: 5px;
+    margin: 10px;
+    background-color: rgb(255, 196, 0);
+}
+#btn_add{
+    width: 100px;
+    height: 40px;
+    font-size: 18pt;
+    background-color: rgb(255, 196, 0);
+    border: 0;
+    border-radius: 2px;
+}
+#btn_add:hover{
+    background-color: rgb(255, 208, 52);
+}
+#btn_add:active{
+    background-color: rgb(158, 125, 15);
+}#bottom{
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(24, 24, 24);
+    color: rgb(197, 197, 197);
+    position: fixed;
+    bottom: 0;
+}
+#githublink{
+    display: flex;
+    justify-content: center;
+    color: rgb(180, 180, 180);
+    text-decoration: none;
+}
+#githublink:hover{
+    text-decoration: underline;
+}
+#githublogo{
+    width: 40px;
+    margin: 0 10px 0 10px;
+}
