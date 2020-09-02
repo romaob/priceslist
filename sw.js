@@ -4,8 +4,8 @@ self.addEventListener('install', function(e) {
         return cache.addAll([
           '/PwaPricesList/',
           '/PwaPricesList/index.html',
-          '/PwaPricesList/index.js',
-          '/PwaPricesList/style.css'
+          '/PwaPricesList/js/index.js',
+          '/PwaPricesList/css/style.css'
         ]);
       })
     );
