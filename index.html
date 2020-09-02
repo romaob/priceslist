@@ -8,14 +8,78 @@
     <title>Prices List</title>
 
     <link href="./css/style.css" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/structure.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/buttons.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/title.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/list.css'>
     <script src="./js/index.js" defer></script>
     <link rel="manifest" href="manifest.webmanifest">
 
 </head>
 <body>
-    <div id="app">        
-        <h1>Hello!</h1>
-        <button id="btn_add">Add</button>
+    <div id="app">
+        <div id="top">
+            <div id="title">
+                <img src="image/priceslist-icon-minimalist.png">
+                <h1 class="color_primary">Prices List</h1>
+                <button id="btn_install">add</button>
+                <!--
+                <a id="btn_install2" >
+                    <img src="images/pricelist-logo-full.png">
+                </a>
+                -->
+            </div>
+        </div>
+        <div id="main">
+            <div id="main_info" class="panel">
+                <div class="panel_header">                    
+                    <p id="main_info_label"  class="panel_header_title main_info_text color_accent">My List</p>
+                    <button id="main_info_edit" class="btn_round" onclick="toggleEditTarget(true)">Ed</button>
+                    <button id="main_options_new" class="btn_round" onclick="newList()">Nw</button>
+                </div> 
+                <div class="panel_content">
+                    <div id="main_info_basic">
+                        <p class="main_info_text color_success" id="main_info_total">Total: $ 0.0</p>                                        
+                        <p class="main_info_text color_info" id="main_info_target">Limit: $ 0.0</p>                                   
+                        <p class="main_info_text" id="main_info_rest">Rest: $ 0.0</p>  
+                    </div>
+                    <div id="main_info_edit_items">
+                        <div>
+                            <p class="label main_info_text">List name</p><input id="main_info_input_label" class="text_field" value="My list"/>
+                        </div>
+                        <div>
+                            <p class="label main_info_text">Limit</p><input id="main_info_input_target" class="text_field" type="number" placeholder="0.00" step="0.01" min="0"/>
+                        </div>
+                        <div class="panel_menu">
+                            <button id="main_info_confirm" class="btn_round background_success" onclick="changeInfo();toggleEditTarget(true)">Ok</button>
+                        </div>
+                    </div>                     
+                </div>           
+            </div>
+
+            <div id="add_item_panel"  class="panel">
+                <div class="panel_content">
+                    <div><p class="label main_info_text">Valor</p><input id="add_item_input_value"  class="text_field" type="number" placeholder="0.00" step="0.01" min="0"/></div>
+                    <div><p class="label main_info_text" >Info</p><input id="add_item_input_info"  class="text_field" type="text"/></div>                    
+                    <input type="file" accept="image/*" capture="camera" />
+                    <div class="panel_menu">
+                        <button id="add_item_btn_confirm" class="btn_round background_success" onclick="addNewItem()">Ok</button>
+                        <button id="add_item_btn_cancel"  class="btn_round background_error" onclick="toggleAddItens(true)">Ca</button>
+                    </div>                    
+                </div>
+            </div>      
+
+            <div id="main_list_panel"  class="panel">
+                <div>
+                    <ul id="main_list_ul" class="list">
+                    </ul>
+                </div>
+            </div>            
+                  
+            <button id="add_item_btn" class="btn_fab" onclick="toggleAddItens(true)">Add</button>            
+        </div>
+        <div id="bot"></div>      
     </div>
 </body>
 </html>

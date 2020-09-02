@@ -1,0 +1,35 @@
+button{
+    cursor: pointer;
+    border: 0;
+    padding: 7px;
+    font-weight: bolder;
+    background-color: #f3c441;
+    color: rgb(39, 39, 39);
+    margin: 2px 5px 2px 5px;
+}
+button:active{
+    background-color: #b38e2a;
+}
+button:focus{
+    outline: 0;    
+}
+.btn_fab{
+    width: 65px;
+    height: 65px;
+    margin: 15px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    font-size: 14pt;
+}
+.btn_round{
+    border-radius: 50%;
+    height: 40px;
+    min-height: 40px;
+    width: 40px;
+    min-width: 40px;
+}
+#btn_install{
+    cursor: pointer;
+}

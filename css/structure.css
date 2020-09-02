@@ -1,0 +1,74 @@
+#app{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+#top{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.26);
+}
+#main{
+    width: 90%;
+    min-width: 300px;
+    flex-grow: 1;
+    min-height: 0;
+}
+#main div{
+    width: 100%;
+}
+#main_list_panel{
+    flex-grow: 1;
+}
+#bot{
+    background-color: #00F;
+    width: 100%;
+}
+.panel{
+    background-color: rgba(0, 0, 0, 0.25);
+    margin-top: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.panel div{
+    padding: 5px;
+}
+.panel_header{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    
+}
+.panel_header_title{
+    flex-grow: 1;
+    text-align: left;
+}
+.panel_content, .panel_content div{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+.main_info_text{
+    flex-grow: 1;
+}
+.label{
+    text-align: left;
+}
+.text_field{
+    flex-grow: 1;
+}
+.panel_menu{
+    flex-direction: row-reverse;
+}
+#main_info_total{
+    text-align: left;
+}
+#main_info_target{
+    text-align: center;
+}
+#main_info_rest{
+    text-align: right;
+}
