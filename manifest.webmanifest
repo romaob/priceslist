@@ -11,6 +11,6 @@
     ],
     "name": "DEMO PWA A2HS",
     "short_name": "PWA-A2HS",
-    "start_url": "/PwaPricesList/index.html"
+    "start_url": "/priceslist/index.html"
   }
   

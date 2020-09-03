@@ -2,10 +2,11 @@ self.addEventListener('install', function(e) {
     e.waitUntil(
       caches.open('content-store').then(function(cache) {
         return cache.addAll([
-          '/PwaPricesList/',
-          '/PwaPricesList/index.html',
-          '/PwaPricesList/js/index.js',
-          '/PwaPricesList/css/*'
+          '/priceslist/',
+          '/priceslist/index.html',
+          '/priceslist/js/index.js',
+          '/priceslist/css/*',
+          '/priceslist/image/*'
         ]);
       })
     );
