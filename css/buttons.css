@@ -30,6 +30,6 @@ button:focus{
     width: 40px;
     min-width: 40px;
 }
-#btn_install{
+#btn_add{
     cursor: pointer;
 }

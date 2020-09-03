@@ -1,11 +1,6 @@
 let listLoad = {
     label: "My list",
-    itens: [
-        {value: 10.0, info: "item 1"},        
-        {value: 11.5, info: "item 2"},
-        {value: 9.8, info: "item 3 item 3 item 3 item 3 item 3 item 3 item 3 item 3 item 3 item 3 item 3 item 3 item 3 item 3 item 3 item 3"},
-        {value: 17.9, info: "item 4"},
-    ]
+    itens: []
 };
 let list = {
     label: "My list",

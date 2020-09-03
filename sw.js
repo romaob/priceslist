@@ -5,7 +5,7 @@ self.addEventListener('install', function(e) {
           '/PwaPricesList/',
           '/PwaPricesList/index.html',
           '/PwaPricesList/js/index.js',
-          '/PwaPricesList/css/style.css'
+          '/PwaPricesList/css/*'
         ]);
       })
     );
