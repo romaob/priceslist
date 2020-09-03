@@ -44,6 +44,8 @@
 .panel_header_title{
     flex-grow: 1;
     text-align: left;
+    font-size: 18pt;
+    padding: 5px;
 }
 .panel_content, .panel_content div{
     display: flex;
@@ -53,6 +55,7 @@
 }
 .main_info_text{
     flex-grow: 1;
+    font-size: 16pt;
 }
 .label{
     text-align: left;

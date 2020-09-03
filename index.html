@@ -39,9 +39,9 @@
         <div id="main">
             <div id="main_info" class="panel">
                 <div class="panel_header">                    
-                    <p id="main_info_label"  class="panel_header_title main_info_text color_accent">My List</p>
-                    <button id="main_info_edit" class="btn_round" onclick="toggleEditTarget(true)">✎</button>
-                    <button id="main_options_new" class="btn_round" onclick="newList()">+</button>
+                    <p id="main_info_label"  class="panel_header_title color_accent">My List</p>
+                    <button id="main_info_edit" class="btn_round" onclick="toggleEditTarget(true)"><img src="image/ic_edit.png"/></button>
+                    <button id="main_options_new" class="btn_round" onclick="newList()"><img src="image/ic_add.png"/></button>
                 </div> 
                 <div class="panel_content">
                     <div id="main_info_basic">
@@ -57,7 +57,7 @@
                             <p class="label main_info_text">Limit</p><input id="main_info_input_target" class="text_field" type="number" placeholder="0.00" step="0.01" min="0"/>
                         </div>
                         <div class="panel_menu">
-                            <button id="main_info_confirm" class="btn_round background_success" onclick="changeInfo();toggleEditTarget(true)">✔</button>
+                            <button id="main_info_confirm" class="btn_round background_success" onclick="changeInfo();toggleEditTarget(true)"><img src="image/ic_check.png"/></button>
                         </div>
                     </div>                     
                 </div>           
@@ -71,8 +71,8 @@
                     <input type="file" accept="image/*" capture="camera" />
                     -->
                     <div class="panel_menu">
-                        <button id="add_item_btn_confirm" class="btn_round background_success" onclick="addNewItem()">✔</button>
-                        <button id="add_item_btn_cancel"  class="btn_round background_error" onclick="toggleAddItens(true)">X</button>
+                        <button id="add_item_btn_confirm" class="btn_round background_success" onclick="addNewItem()"><img src="image/ic_check.png"/></button>
+                        <button id="add_item_btn_cancel"  class="btn_round background_error" onclick="toggleAddItens(true)"><img src="image/ic_cancel_black.png"/></button>
                     </div>                    
                 </div>
             </div>      
@@ -84,7 +84,7 @@
                 </div>
             </div>            
                   
-            <button id="add_item_btn" class="btn_fab" onclick="toggleAddItens(true)">Add</button>            
+            <button id="add_item_btn" class="btn_fab" onclick="toggleAddItens(true)"><img src="image/ic_add.png"/></button>            
         </div>
         <div id="bot"></div>      
     </div>

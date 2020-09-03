@@ -6,7 +6,7 @@ if('serviceWorker' in navigator) {
 
 let deferredPrompt;
 const addBtn = document.getElementById('btn_add');
-addBtn.style.displa = "none";
+addBtn.style.display = "none";
 
 window.addEventListener('beforeinstallprompt', (e) => {
   e.preventDefault();
