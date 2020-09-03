@@ -42,7 +42,7 @@ function addItemList(value, info = ""){
     list.itens.push(newItem);
     nextItemId++;
     let id = `main_list_item_${newItem.id}`;
-    let htmlItem = `<li id="${id}" class="list_item" style="display: none"><p class="list_item_value color_info">$${value}</p> <p class="list_item_info">${info}</p><button class="background_error btn_round" onclick="removeItem(${newItem.id})">-</button></li>`;
+    let htmlItem = `<li id="${id}" class="list_item" style="display: none"><p class="list_item_value color_info">$${value}</p> <p class="list_item_info">${info}</p><button class="background_error btn_round" onclick="removeItem(${newItem.id})">X</button></li>`;
     $("#main_list_ul").append(htmlItem);
     $(`#${id}`).show(200);
 

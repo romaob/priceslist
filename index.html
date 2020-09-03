@@ -28,18 +28,20 @@
                 <!--
                 <button id="btn_add">add</button>
                 -->                
-                <a id="btn_add" >
-                    <img src="image/pricelist-logo-full.png">
+                <a id="btn_add">
+                    <p class="color_accent">INSTALL</p>                   
                 </a>
-                <!---->
+                <!--
+                     <img src="image/pricelist-logo-full.png">
+                -->
             </div>
         </div>
         <div id="main">
             <div id="main_info" class="panel">
                 <div class="panel_header">                    
                     <p id="main_info_label"  class="panel_header_title main_info_text color_accent">My List</p>
-                    <button id="main_info_edit" class="btn_round" onclick="toggleEditTarget(true)">Ed</button>
-                    <button id="main_options_new" class="btn_round" onclick="newList()">Nw</button>
+                    <button id="main_info_edit" class="btn_round" onclick="toggleEditTarget(true)">✎</button>
+                    <button id="main_options_new" class="btn_round" onclick="newList()">+</button>
                 </div> 
                 <div class="panel_content">
                     <div id="main_info_basic">
@@ -55,7 +57,7 @@
                             <p class="label main_info_text">Limit</p><input id="main_info_input_target" class="text_field" type="number" placeholder="0.00" step="0.01" min="0"/>
                         </div>
                         <div class="panel_menu">
-                            <button id="main_info_confirm" class="btn_round background_success" onclick="changeInfo();toggleEditTarget(true)">Ok</button>
+                            <button id="main_info_confirm" class="btn_round background_success" onclick="changeInfo();toggleEditTarget(true)">✔</button>
                         </div>
                     </div>                     
                 </div>           
@@ -69,8 +71,8 @@
                     <input type="file" accept="image/*" capture="camera" />
                     -->
                     <div class="panel_menu">
-                        <button id="add_item_btn_confirm" class="btn_round background_success" onclick="addNewItem()">Ok</button>
-                        <button id="add_item_btn_cancel"  class="btn_round background_error" onclick="toggleAddItens(true)">Ca</button>
+                        <button id="add_item_btn_confirm" class="btn_round background_success" onclick="addNewItem()">✔</button>
+                        <button id="add_item_btn_cancel"  class="btn_round background_error" onclick="toggleAddItens(true)">X</button>
                     </div>                    
                 </div>
             </div>      

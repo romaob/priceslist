@@ -16,6 +16,6 @@ body{
 .color_error{ color: #b33a3a; }
 .color_info{ color: #609cea; }
 .background_accent{ background-color: #f3c441; color: rgb(39, 39, 39); }
-.background_error{ background-color: #b33a3a; color: rgb(39, 39, 39); }
+.background_error{ background-color: #b33a3a; color: rgba(255, 255, 255, 0.815); }
 .background_success{ background-color: #32d13a; color: rgb(39, 39, 39); }
 .text_big{font-size: 18pt;}.text_medium{font-size: 16pt;}.text_small{font-size: 12pt;}

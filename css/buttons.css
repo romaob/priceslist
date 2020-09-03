@@ -29,7 +29,18 @@ button:focus{
     min-height: 40px;
     width: 40px;
     min-width: 40px;
+    font-size: 18pt;
+    font-weight: bold;
+    line-height: 5px;
 }
 #btn_add{
     cursor: pointer;
+    padding: 5px;
+}
+#btn_add :hover{
+    background-color: rgba(255, 255, 255, 0.205);
+}
+#btn_add p{
+    font-size: 18pt;
+    text-decoration: underline;
 }
